@@ -70,6 +70,20 @@ function takeCommand(message) {
     } else if (message.includes("open telegram")) {
         window.open("https://telegram.org/", "_blank");
         speak("Opening Telegram...");
+
+    } else if (message.includes("open instagram")) {
+        window.open("https://www.instagram.com/", "_blank");
+        speak("Opening Instagram...");
+    } else if (message.includes("open whatsapp")) {
+        window.open("https://www.whatsapp.com/", "_blank");
+        speak("Opening Whatsapp...");
+    } else if (message.includes("open snapchat")) {
+        window.open("https://www.snapchat.com/", "_blank");
+        speak("Opening Snapchat...");
+    } else if (message.includes("open netflix")) {
+        window.open("https://netflix.com", "_blank");
+        speak("Opening Netflix...");
+
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
