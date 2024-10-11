@@ -45,7 +45,7 @@ btn.addEventListener('click', () => {
 });
 
 function takeCommand(message) {
-    if (message.includes("hi") || message.includes("hello")) {
+    if (message.includes("hey") || message.includes("hello")) {
         wishMe();
         speak( "How May I Help You?");
 
@@ -68,14 +68,14 @@ function takeCommand(message) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
     } else if (message.includes("open telegram")) {
-        window.open("https://telegram.org/", "_blank");
+        window.open("https://telegram.org/android", "_blank");
         speak("Opening Telegram...");
 
     } else if (message.includes("open instagram")) {
         window.open("https://www.instagram.com/", "_blank");
         speak("Opening Instagram...");
     } else if (message.includes("open whatsapp")) {
-        window.open("https://www.whatsapp.com/", "_blank");
+        window.open("https://whatsapp.com/", "_blank");
         speak("Opening Whatsapp...");
     } else if (message.includes("open snapchat")) {
         window.open("https://www.snapchat.com/", "_blank");
